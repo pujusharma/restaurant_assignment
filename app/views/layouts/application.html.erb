@@ -11,6 +11,9 @@
   </head>
 
   <body>
+<%= link_to "Register with 'provider'", user_facebook_omniauth_authorize_path, method: :post %>
+
+<%= link_to "Register with 'provider'", user_google_oauth2_omniauth_authorize_path, method: :post %>
     <%= yield %>
   </body>
 </html>
